@@ -1,0 +1,29 @@
+﻿<table>
+    <thead>
+        <tr>
+            <th>Photo</th>
+            <th>Full Name</th>
+            <th>Email</th>
+            <th>Mobile</th>
+            <th>Date of Birth</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var obj in Model)
+        {
+            <tr>
+                <td><img src="~/Images/avater.jpg" alt="Photo" class="avatar"></td>
+                <td>@obj.Name</td>
+                <td>@obj.Email</td>
+                <td>@obj.Mobile</td>
+                <td>@obj.DOB.ToString("dd/MM/yyyy")</td>
+                <td>
+                    <a asp-controller="Home" asp-action="EditEmployee" asp-route-id="@obj.Id" class="delete-btn">Edit</a>
+                    <a asp-controller="Home" asp-action="Delete" asp-route-id="@obj.Id" class="delete-btn">Delete</a>
+                </td>
+            </tr>
+        }
+
+    </tbody>
+</table>

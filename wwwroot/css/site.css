@@ -1,0 +1,185 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Sidebar styling */
+.sidebar {
+    height: 100vh; 
+    width: 150px; 
+    position: fixed; 
+    background-color: white; 
+    border-right: 1px solid #ccc; 
+    padding-top: 20px; 
+}
+
+    /* Sidebar links styling */
+    .sidebar a {
+        padding: 12px 15px; /* Padding inside the links */
+        text-decoration: none; /* Remove underline */
+        font-size: 16px;
+        color: black; /* Black text like the image */
+        display: block; /* Make the links fill the sidebar width */
+        border-bottom: 1px solid #e0e0e0; /* Light border between links */
+    }
+
+
+
+/* Container for the body */
+.container {
+    margin-left: 150px;
+    padding: 20px;
+}
+
+
+.search-bar {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+    .search-bar input {
+        padding: 8px;
+        margin-right: 10px;
+        width: 20%;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+    }
+
+    .search-bar button {
+        padding: 8px 12px;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        border-radius: 3px;
+        cursor: pointer;
+    }
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+    table th, table td {
+        padding: 12px;
+        border: 1px solid #ccc;
+        text-align: left;
+    }
+
+    table th {
+        
+    }
+
+
+/* Remove borders for internal cells in the first row */
+tr:first-child th{
+    border-left: none;
+    border-right: none;
+}
+
+    tr:first-child th:first-child {
+        border-left: 1px solid black;
+    }
+
+    tr:first-child th:last-child {
+        border-right: 1px solid black;
+    }
+/* End -- Remove borders for internal cells in the first row */
+
+
+.avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+
+.edit-btn, .delete-btn {
+    padding: 6px 12px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+.edit-btn {
+    background-color: #28a745; /* Green for edit */
+}
+
+    .edit-btn:hover {
+        background-color: #218838;
+    }
+
+.delete-btn {
+    background-color: #dc3545; /* Red for delete */
+}
+
+    .delete-btn:hover {
+        background-color: #c82333;
+    }
+
+
+.pagination {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+    .pagination span {
+        display: inline-block;
+    }
+
+    .pagination a {
+        padding: 8px 12px;
+        text-decoration: none;
+        border: 1px solid #ccc;
+        margin-right: 5px;
+        color: black;
+    }
+
+        .pagination a:hover {
+            background-color: #f4f4f4;
+            border-color: #007bff;
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}

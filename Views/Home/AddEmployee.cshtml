@@ -1,0 +1,32 @@
+﻿@{
+    ViewData["Title"] = "Add Employee";
+}
+
+<form asp-action="AddEmployee" asp-controller="Employee" method="post">
+    <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="Name" class="form-control" required />
+    </div>
+
+    <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="Email" class="form-control" required />
+    </div>
+
+    <div class="form-group">
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="DateOfBirth" class="form-control" required />
+    </div>
+
+    <div class="form-group">
+        <label for="phone">Phone:</label>
+        <input type="text" id="phone" name="Phone" class="form-control" required />
+    </div>
+
+    <div class="form-group">
+        <label for="photo">Photo:</label>
+        <input type="file" id="photo" name="Photo" class="form-control" accept="image/*" />
+    </div>
+    <br/> 
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
